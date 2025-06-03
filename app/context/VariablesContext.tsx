@@ -1,0 +1,54 @@
+"use client";
+import { useParams } from "next/navigation";
+import {
+  createContext,
+  Dispatch,
+  ReactNode,
+  SetStateAction,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
+
+interface VariablesType {
+  width: number;
+  local: "en" | "ar";
+  showLangDrop: boolean;
+  setShowLangDrop: Dispatch<SetStateAction<boolean>>;
+}
+
+interface props {
+  children: ReactNode;
+}
+
+const Variables = createContext<VariablesType | null>(null);
+
+export default function VariablesProvider({ children }: props) {
+  const params = useParams();
+  const local = (params.local as "en" | "ar") || "en";
+
+  const [width, setWidth] = useState(0);
+  const [showLangDrop, setShowLangDrop] = useState(false);
+
+  useEffect(() => {
+    addEventListener("resize", () => {
+      setWidth(innerWidth);
+    });
+  }, []);
+
+  return (
+    <Variables.Provider value={{ width, local, showLangDrop, setShowLangDrop }}>
+      {children}
+    </Variables.Provider>
+  );
+}
+
+export const useVariables = () => {
+  const context = useContext(Variables);
+
+  if (!context) {
+    throw new Error("useVariables must be used within a VariablesProvider");
+  }
+
+  return context;
+};

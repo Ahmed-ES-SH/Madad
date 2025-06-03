@@ -1,0 +1,111 @@
+{
+  "layoutMeta": {
+    "title": "Madad - Innovative Tech Solutions",
+    "description": "Madad offers cutting-edge technology and development services to empower your business in the digital world. From custom software to digital transformation – we've got you covered."
+  },
+
+  "hero": {
+    "title1": "Excellent IT",
+    "solutions": "Solutions",
+    "forYour": "For Your",
+    "success": "Success",
+    "description": "At Madad, we provide innovative and tailored tech solutions to help your business thrive in the digital era. From custom development to digital transformation — we’ve got you covered.",
+    "join": "Join Now"
+  },
+
+  "aboutSection": {
+    "sectionTitleSmall": "About Madad!",
+    "sectionTitleLarge": "A brief about Madad !",
+    "description": "Madad Arabia Advertising and Publicity Company is a leading Saudi company specialized in providing digital marketing services and commercial promotion on social media platforms and providing road, television and radio advertising in cooperation with the largest advertising and publicity companies in the Kingdom through a dedicated team to build integrated marketing strategies that ensure the development of commercial relations and reaching your target customer with high quality and following up and preparing marketing reports with the aim of continuous improvement and development",
+    "buttonText": "Know More"
+  },
+
+  "companyValuesSection": {
+    "title": "Company Values",
+    "description": "At Madad Arabia Advertising and Publicity Company, we believe that the values ​​adopted by any company are the only way to its success and to establish the quality of its services. That is why we chose our values ​​to be the trust of our clients, the motivation and goal that we set before our eyes and move steadily towards."
+  },
+
+  "portfolioSection": {
+    "title": "Our Portfolio",
+    "description": "Crafted with skill and care to help our clients grow their business through creative, innovative, and results-driven solutions. Each project reflects our commitment to excellence and deep understanding of our clients' unique needs.",
+    "showMore": "Show More",
+    "all": "All"
+  },
+
+  "services": {
+    "subtitle": "Our Services",
+    "title": "What We’re Offering?",
+    "description": "We provide a wide range of creative and digital marketing services tailored to help your brand grow, from strategic planning to execution across social media, websites, and offline campaigns.",
+    "cta": "Get Started Today"
+  },
+
+  "blogSection": {
+    "title": "Our latest",
+    "blogs": "blogs",
+    "paragraphLine": "Welcome to our blog section, where knowledge meets inspiration. Explore insightful articles, expert tips, and the latest trends in our field.",
+    "button": "View All"
+  },
+
+  "contactusSection": {
+    "contactUs": "Contact us",
+    "description": "We are here to help and answer any questions you might have. Reach out to us and we'll respond as soon as we can.",
+    "messageLabel": "Message",
+    "sendMessage": "Send Message"
+  },
+
+  "footerLines": {
+    "heading": "Get the latest news!",
+    "description": "Stay up to date with all the latest news",
+    "subscribeButton": "Subscribe"
+  },
+
+  "aboutPage": {
+    "smartTool": "Smart Tool",
+    "hero_title": "Control your Finances with our",
+    "hero_description": "Invest intelligently and discover a better way to manage your entire wealth easily.",
+    "about_us_title": "About Us",
+    "about_us_description": "Madad Arabia Advertising and Publicity Company is a leading Saudi company specialized in providing digital marketing services and commercial promotion on social media platforms and providing road, television and radio advertising in cooperation with the largest advertising and publicity companies in the Kingdom through a dedicated team to build integrated marketing strategies that ensure the development of commercial relations and reaching your target customer with high quality and following up and preparing marketing reports with the aim of continuous improvement and development",
+    "creative_title": "We are Creative Everytime",
+    "creative_description": "Pagedone isn’t just a collection of components and guidelines; it's a philosophy. We go beyond aesthetics, prioritizing accessibility, scalability, and usability. Every element, from the tiniest detail to the grandest layout, is meticulously crafted to enhance functionality and elevate user satisfaction."
+  },
+
+  "companyStats": {
+    "title": "Company Statistics",
+    "description": "Numbers that speak of our success and our clients’ trust"
+  },
+
+  "contactAbout": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Let's discuss how Madad can help you achieve your technology goals. Get in touch for a free consultation and custom quote.",
+    "getFreeQuote": "Get Free Quote",
+    "scheduleCall": "Schedule Call"
+  },
+
+  "testimonialsSection": {
+    "title": "What Our Clients Say",
+    "description": "What our clients say about their experience with us"
+  },
+
+  "servicesPage": {
+    "title1": "Our Services",
+    "title2": "What We’re Offering?",
+    "description": "Advertising services encompass a range of strategies and solutions designed to promote products or brands through various channels, including digital, print, and broadcast media. These services aim to enhance brand visibility, engage target audiences, and drive sales by crafting compelling messages and creative campaigns tailored to specific markets."
+  },
+
+  "pricing": {
+    "title": "Pricing Plan",
+    "subtitle": "Our Pricing Plan",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "popular": "Popular",
+    "per": "per",
+    "features": "FEATURES",
+    "month": "month",
+    "year": "year"
+  },
+
+  "howWeWork": {
+    "sectionTitle": "How We Work",
+    "sectionSubtitle": "How We Deliver Innovation And Excellence"
+  }
+}

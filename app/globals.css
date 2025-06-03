@@ -1,15 +1,30 @@
 @import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-yellow: #facc15;
+  --dark-btn: #041e42;
+  --icon-color: #99a1af;
+  --primary-blue: #007baa;
+  --primary-orange: #d29203;
+  --primary-red: #a80104;
+  --primary-dark: #0f172a;
+  --second-dark: #1f2937;
+  --second-text: #94a3b8;
+  --primary-text: #404742;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary-yellow: var(--primary-yellow);
+  --color-dark-btn: var(--dark-btn);
+  --color-icon-color: var(--icon-color);
+  --color-primary-blue: var(--primary-blue);
+  --color-primary-orange: var(--primary-orange);
+  --color-primary-red: var(--primary-red);
+  --color-primary-dark: var(--primary-dark);
+  --color-second-dark: var(--second-dark);
+  --color-second-text: var(--second-text);
+  --color-primary-text: var(--primary-text);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +34,160 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-blue);
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+@layer components {
+  .c-container {
+    @apply xl:w-[85%] lg:w-[90%] w-full px-[15px] max-md:px-[10px] mx-auto;
+  }
+
+  .primary-btn {
+    @apply flex items-center justify-center border border-transparent rounded-md duration-300 w-fit text-white mt-4 relative overflow-hidden block  bg-primary-blue px-12 py-3 text-sm font-medium  outline-none hover:bg-transparent hover:border-primary-blue hover:scale-110 hover:text-black;
+  }
+}
+
+@layer base {
+  html {
+    @apply transition-colors duration-300;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.main_link:hover .circle {
+  transition: 0.5s;
+  animation: go_back 0.8s ease-in;
+  -webkit-animation: go_back 0.8s ease-in;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.up-down {
+  animation: moveUpDown 1s ease-in-out infinite;
+}
+.up-down-2 {
+  animation: moveUpDown_2 1s ease-in-out infinite;
+}
+
+.img-animate {
+  transform: scaleX(-1);
+  animation: moveUpDown 1s ease-in-out infinite;
+}
+
+.testimonials-swiper .swiper-button-next,
+.testimonials-swiper .swiper-button-prev {
+  color: #facc15;
+  background: var(--primary-blue);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.testimonials-swiper .swiper-button-next:hover,
+.testimonials-swiper .swiper-button-prev:hover {
+  background: var(--primary-blue);
+  color: white;
+  transition: 0.5;
+}
+
+.testimonials-swiper .swiper-pagination {
+  bottom: -50px;
+}
+
+.testimonials-swiper .swiper-slide {
+  height: auto;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateX(0); /* الوضع الافتراضي */
+  }
+  50% {
+    transform: translateX(-2px); /* تحريك الصورة إلى أعلى */
+  }
+  75% {
+    transform: translateX(2px); /* تحريك الصورة إلى أسفل */
+  }
+}
+@keyframes moveUpDown_2 {
+  0%,
+  100% {
+    transform: translateY(0); /* الوضع الافتراضي */
+  }
+  40% {
+    transform: translateY(-7px); /* تحريك الصورة إلى أعلى */
+  }
+  85% {
+    transform: translateY(7px); /* تحريك الصورة إلى أسفل */
+  }
+}
+
+@keyframes go_back {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 80%;
+  }
+
+  80% {
+    left: 50%;
+  }
+
+  0% {
+    left: 4px;
+  }
+}
+
+.particles-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
