@@ -107,5 +107,17 @@
   "howWeWork": {
     "sectionTitle": "How We Work",
     "sectionSubtitle": "How We Deliver Innovation And Excellence"
+  },
+
+  "portfolioPage": {
+    "filter": "Filter by Category",
+    "projectsTitle": "Our Projects",
+    "projectsTitleHighlight": "Portfolio",
+    "projectsDescription": "Explore our latest technology projects and innovations"
+  },
+
+  "servicesSlider": {
+    "title": "Discover Our Services",
+    "description": "We offer a variety of services to help you achieve your goals efficiently and professionally, from marketing strategies to web design."
   }
 }

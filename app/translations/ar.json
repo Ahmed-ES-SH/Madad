@@ -106,5 +106,17 @@
   "howWeWork": {
     "sectionTitle": "كيف نعمل",
     "sectionSubtitle": "كيف نقدم الابتكار والتميّز"
+  },
+
+  "portfolioPage": {
+    "filter": "تصفية بالقسم",
+    "projectsTitle": "",
+    "projectsTitleHighlight": "أعمالنا",
+    "projectsDescription": "استكشف أحدث مشاريعنا التقنية وابتكاراتنا"
+  },
+
+  "servicesSlider": {
+    "title": "اكتشف خدماتنا",
+    "description": "نقدّم مجموعة متنوعة من الخدمات لمساعدتك على تحقيق أهدافك بكفاءة واحترافية، بدءًا من استراتيجيات التسويق وحتى تصميم المواقع."
   }
 }
