@@ -2,11 +2,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { PiCaretDoubleDownDuotone } from "react-icons/pi";
-import Link from "next/link";
 import { directionMap, socialIcons } from "@/app/constants/constants";
 import Img from "../../_global/Img";
 import { useVariables } from "@/app/context/VariablesContext";
 import { getTranslations } from "@/app/helpers/helpers";
+import LocalLink from "../../_global/LocalLink";
 
 export default function Hero_section() {
   const { local } = useVariables();
@@ -41,14 +41,14 @@ export default function Hero_section() {
         >
           <div className="flex items-center gap-4 mb-6">
             {socialIcons.map((box, index) => (
-              <Link
+              <LocalLink
                 key={index}
                 href={box.link}
                 className="group hover:scale-[115%] duration-300 cursor-pointer relative overflow-hidden w-[34px] h-[34px] flex items-center justify-center rounded-md bg-slate-200/80 shadow-sm"
               >
                 <box.icon className="size-6 z-[10] group-hover:text-white duration-300" />
                 <div className="group-hover:w-full left absolute left-0 top-0 bg-primary-orange w-0 duration-300  h-[500px]"></div>
-              </Link>
+              </LocalLink>
             ))}
           </div>
           <h1 className="text-6xl max-lg:text-4xl font-semibold my-1 text-primary-text">
@@ -62,7 +62,7 @@ export default function Hero_section() {
             {hero.success}
           </h1>
           <p className="my-2 w-[70%]  max-lg:w-full">{hero.description}</p>
-          <Link
+          <LocalLink
             href={"/signup"}
             className="px-4 block w-fit h-fit shadow-md group overflow-hidden  relative py-2 rounded-full bg-primary-blue"
           >
@@ -71,7 +71,7 @@ export default function Hero_section() {
             </p>
             <div className="group-hover:w-full left absolute right-0 top-0 bg-white w-0 duration-700 h-[500px]"></div>
             <div className="group-hover:w-full right absolute left-0 top-0 bg-white w-0 duration-700 h-[500px]"></div>
-          </Link>
+          </LocalLink>
         </motion.div>
 
         <motion.div
@@ -97,12 +97,12 @@ export default function Hero_section() {
           className="w-full  h-[300px] max-lg:h-full z-[9]"
         />
       </motion.div>
-      <Link
+      <LocalLink
         className="up-down-2 z-[99]  absolute  bottom-[10%] max-lg:bottom-4 left-1/2 -translate-x-1/2 text-center m-auto w-fit cursor-pointer"
         href={"#about"}
       >
         <PiCaretDoubleDownDuotone size={33} className="" />
-      </Link>
+      </LocalLink>
     </div>
   );
 }

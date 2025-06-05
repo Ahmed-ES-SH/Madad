@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import Link from "next/link";
 import Img from "../../_global/Img";
 import { useVariables } from "@/app/context/VariablesContext";
 import { getTranslations } from "@/app/helpers/helpers";
 import { directionMap } from "@/app/constants/constants";
+import LocalLink from "../../_global/LocalLink";
 
 export default function BlogSlider() {
   const { local } = useVariables();
@@ -60,12 +60,12 @@ export default function BlogSlider() {
           <p className="text-gray-500 mb-10 max-lg:max-w-xl max-lg:mx-auto">
             {blogSection.paragraphLine}
           </p>
-          <Link
+          <LocalLink
             href="/blog"
             className="primary-btn max-lg:mx-auto bg-primary-red hover:bg-white hover:border-primary-red"
           >
             {blogSection.button}
-          </Link>
+          </LocalLink>
         </div>
         <div className="flex relative w-1/2  mx-auto h-[20vh] max-md:h-[8vh] items-center lg:justify-center justify-center lg:mt-0 mt-16 gap-4 mb-4">
           <button
@@ -94,7 +94,7 @@ export default function BlogSlider() {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <Link
+              <LocalLink
                 className="group relative block rounded-xl focus:outline-none"
                 href="#"
               >
@@ -128,7 +128,7 @@ export default function BlogSlider() {
                     <p className="mt-2 text-white/80">{slide.desc}</p>
                   </div>
                 </div>
-              </Link>
+              </LocalLink>
             </SwiperSlide>
           ))}
         </Swiper>

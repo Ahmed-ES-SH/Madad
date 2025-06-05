@@ -6,11 +6,11 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-import Link from "next/link";
 import Img from "./Img";
 import { useVariables } from "@/app/context/VariablesContext";
 import { getTranslations } from "@/app/helpers/helpers";
 import { directionMap } from "@/app/constants/constants";
+import LocalLink from "./LocalLink";
 
 const footerSections = [
   {
@@ -112,14 +112,14 @@ export default function Footer() {
                 <ul className="mt-6 space-y-4 text-sm">
                   {section.links.map((link, idx) => (
                     <li key={idx}>
-                      <Link
+                      <LocalLink
                         href="#"
                         className={`text-gray-300 hover:text-gray-500 duration-300 ${
                           local == "en" ? "hover:ml-2" : "hover:mr-2"
                         }`}
                       >
                         {link[local]}
-                      </Link>
+                      </LocalLink>
                     </li>
                   ))}
                 </ul>
@@ -130,15 +130,13 @@ export default function Footer() {
           <ul className="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end mt-4">
             {socialLinks.map(({ icon, label, href }, idx) => (
               <li key={idx}>
-                <Link
+                <LocalLink
                   href={href}
-                  target="_blank"
-                  rel="noreferrer"
                   className="block text-gray-200 hover:text-gray-400 hover:-translate-y-2 duration-300"
                 >
                   <span className="sr-only">{label}</span>
                   {icon}
-                </Link>
+                </LocalLink>
               </li>
             ))}
           </ul>

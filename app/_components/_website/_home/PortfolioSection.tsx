@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import React from "react";
-import Link from "next/link";
 import {
   directionMap,
   projectCategories,
@@ -11,6 +10,7 @@ import { useVariables } from "@/app/context/VariablesContext";
 import { getTranslations } from "@/app/helpers/helpers";
 import ProjectCard from "./ProjectCard";
 import { AnimatePresence, motion } from "framer-motion";
+import LocalLink from "../../_global/LocalLink";
 
 export default function PortfolioSection() {
   const { local } = useVariables();
@@ -78,12 +78,12 @@ export default function PortfolioSection() {
           </AnimatePresence>
         </motion.div>
 
-        <Link
+        <LocalLink
           href="/portfolio"
           className="primary-btn w-fit mx-auto group mt-8 block"
         >
           {portfolioSection.showMore}
-        </Link>
+        </LocalLink>
       </div>
     </section>
   );

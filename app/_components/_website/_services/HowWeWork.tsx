@@ -5,6 +5,7 @@ import { FiTarget, FiSettings, FiTrendingUp } from "react-icons/fi";
 import Img from "../../_global/Img";
 import { useVariables } from "@/app/context/VariablesContext";
 import { getTranslations } from "@/app/helpers/helpers";
+import { directionMap } from "@/app/constants/constants";
 
 interface WorkStep {
   number: string;
@@ -103,7 +104,10 @@ export default function HowWeWork() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div
+      dir={directionMap[local]}
+      className="min-h-screen bg-gradient-to-br from-gray-50 to-white"
+    >
       <div className="c-container ">
         <motion.div
           className="grid lg:grid-cols-2 gap-12 items-center w-full"

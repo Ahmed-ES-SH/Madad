@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import { directionMap, servicesSection } from "@/app/constants/constants";
 import Img from "../../_global/Img";
 import { useVariables } from "@/app/context/VariablesContext";
-import { getTranslations } from "@/app/helpers/helpers";
+import { formatTitle, getTranslations } from "@/app/helpers/helpers";
+import LocalLink from "../../_global/LocalLink";
 
 export default function ServicesSection() {
   const { local } = useVariables();
@@ -26,9 +26,11 @@ export default function ServicesSection() {
 
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {servicesSection.map((service, index) => (
-              <Link
+              <LocalLink
                 key={index}
-                href={"#"}
+                href={`/services/${formatTitle(
+                  service.title[local]
+                )}?serviceId=${service.id}`}
                 className="block group py-12 rounded-xl border border-gray-300  p-8 shadow-xl transition hover:border-primary-yellow hover:shadow-primary-yellow relative overflow-hidden"
               >
                 <div className="group-hover:scale-[140%] group-hover:rotate-[360deg] duration-500 w-fit">
@@ -44,17 +46,17 @@ export default function ServicesSection() {
                 </p>
 
                 <div className="w-0 h-full absolute top-0 left-0 bg-primary-yellow z-[-1] group-hover:w-full duration-500"></div>
-              </Link>
+              </LocalLink>
             ))}
           </div>
 
           <div className="mt-12 text-center">
-            <Link
+            <LocalLink
               href="/services"
               className="primary-btn mx-auto bg-primary-yellow hover:bg-white  hover:border-primary-yellow"
             >
               {services.cta}
-            </Link>
+            </LocalLink>
           </div>
         </div>
       </section>

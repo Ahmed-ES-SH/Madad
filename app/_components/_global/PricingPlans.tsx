@@ -167,8 +167,8 @@ export default function PricingPlans() {
   };
 
   return (
-    <div dir={directionMap[local]} className="min-h-screen  py-16 px-6">
-      <div className="c-container">
+    <div dir={directionMap[local]} className="min-h-screen   px-6">
+      <div className="c-container border-t border-gray-200 py-2">
         {/* Header */}
         <motion.div
           className="text-center mb-16"

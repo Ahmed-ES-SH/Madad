@@ -8,6 +8,8 @@ import { directionMap } from "./constants/constants";
 import { getTranslations } from "./helpers/helpers";
 import { getSharedMetadata } from "./helpers/getSharedMetadata";
 import "./globals.css";
+import WhatsappButton from "./_components/_global/WhatsappButton";
+import ScrollToTopButton from "./_components/_global/ScrollToTopButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,7 +50,11 @@ export default async function RootLayout({ params, children }: Props) {
           <ClientLayout>
             <Navbar />
             <Toaster richColors position="bottom-right" />
-            <div className="min-h-screen">{children}</div>
+            <div className="min-h-screen">
+              {children}
+              <WhatsappButton />
+              <ScrollToTopButton />
+            </div>
             <Footer />
           </ClientLayout>
         </ClerkProvider>

@@ -119,5 +119,74 @@
   "servicesSlider": {
     "title": "Discover Our Services",
     "description": "We offer a variety of services to help you achieve your goals efficiently and professionally, from marketing strategies to web design."
+  },
+
+  "contactPage": {
+    "faqTitle": "Frequently Asked Questions",
+    "faqDescription": "Find answers to common questions about our services, process, and pricing. Can't find what you're looking for? Feel free to contact us directly.",
+    "contactTitle": "Get In Touch",
+    "contactDescription": "Ready to start your next project? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+    "contactHelperText": "We're here to help and answer any questions you might have.",
+    "sending": "Sending...",
+    "sendMessage": "Send Message",
+    "messageSend": "Message Send !",
+    "thanksMessage": "Thank you for reaching out. We'll get back to you within 24 hours.",
+    "formTitle": "Send us a Message",
+    "formDescription": "Fill out the form below and we'll get back to you as soon as possible.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Enter your email address",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "What's this about?",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us more about your project or inquiry..."
+  },
+
+  "validationMessages": {
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "subjectRequired": "Subject is required",
+    "messageRequired": "Message is required",
+    "messageTooShort": "Message must be at least 10 characters long"
+  },
+
+  "blogPage": {
+    "categoriesTitle": "ALL CATEGORIES",
+    "latestPostsTitle": "LATEST POSTS",
+    "popularTagsTitle": "POPULAR TAGS",
+    "showing": "SHOWING",
+    "Results": "RESULTS",
+    "sortBy": {
+      "recent": "SORT BY: Recent",
+      "popular": "SORT BY: Popular",
+      "oldest": "SORT BY: Oldest"
+    },
+    "ideasThatInspire": "IDEAS THAT INSPIRE",
+    "loadingText": "Loading articles..."
+  },
+
+  "noArticles": {
+    "title": "No Articles Found",
+    "message": "Sorry, we couldn’t find any articles matching your criteria. Please try adjusting your filters or check back later."
+  },
+
+  "ProjectPage": {
+    "technologiesUsed": "Technologies Used",
+    "viewProject": "View Project",
+    "sourceCode": "Source Code",
+    "allProjects": "All Projects",
+    "exploreProjects": "Explore a diverse collection of projects built with cutting-edge technologies",
+    "otherProjects": "Other Projects"
+  },
+
+  "servicePage": {
+    "benefits": "Benefits",
+    "features": "Features",
+    "targetAudience": "Target Audience",
+    "otherServices": "Other Services",
+    "orderService": "Order Service",
+    "contactbtn": "Contact Us"
   }
 }

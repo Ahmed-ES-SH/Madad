@@ -1,17 +1,18 @@
 "use client";
 import React from "react";
-import Link from "next/link";
-import { services } from "@/app/constants/constants";
+import { directionMap } from "@/app/constants/constants";
 import Img from "../../_global/Img";
 import { useVariables } from "@/app/context/VariablesContext";
-import { getTranslations } from "@/app/helpers/helpers";
+import { formatTitle, getTranslations } from "@/app/helpers/helpers";
+import LocalLink from "../../_global/LocalLink";
+import { servicesData } from "@/app/constants/servicesData";
 
 export default function ServicesComponent() {
   const { local } = useVariables();
   const { servicesPage } = getTranslations(local);
   return (
     <>
-      <section className="pt-12">
+      <section dir={directionMap[local]} className="pt-12 pb-3">
         <div className="c-container py-8 sm:py-12 lg:py-16">
           <div className="lg:w-3/4 w-full mx-auto text-center">
             <h2 className="text-4xl  text-primary-red underline my-4 font-bold sm:text-2xl">
@@ -25,10 +26,12 @@ export default function ServicesComponent() {
           </div>
 
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service, index) => (
-              <Link
+            {servicesData.map((service, index) => (
+              <LocalLink
                 key={index}
-                href={"#"}
+                href={`/services/${formatTitle(
+                  service.title[local]
+                )}?serviceId=${service.id}`}
                 className="block group py-12 rounded-xl border border-gray-300  p-8 shadow-xl transition hover:border-primary-yellow hover:shadow-primary-yellow relative overflow-hidden"
               >
                 <div className="group-hover:scale-[140%] group-hover:rotate-[360deg] duration-500 w-fit">
@@ -44,7 +47,7 @@ export default function ServicesComponent() {
                 </p>
 
                 <div className="w-0 h-full absolute top-0 left-0 bg-primary-yellow z-[-1] group-hover:w-full duration-500"></div>
-              </Link>
+              </LocalLink>
             ))}
           </div>
         </div>

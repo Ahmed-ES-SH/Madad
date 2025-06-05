@@ -65,7 +65,7 @@ export default function SidebarFilter({
             exit={{ x: -400 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
           >
-            <div className="bg-white max-lg:h-full max-lg:w-full lg:rounded-2xl shadow-lg p-6 lg:sticky top-6">
+            <div className="bg-white max-lg:h-full max-lg:w-full lg:rounded-2xl shadow-lg p-6 lg:sticky top-24">
               <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
                 <FiFilter className="w-5 h-5 text-primary-blue" />
                 {portfolioPage.filter}

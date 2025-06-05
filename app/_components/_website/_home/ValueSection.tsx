@@ -1,14 +1,14 @@
 "use client";
-import Link from "next/link";
 import React from "react";
 import Img from "../../_global/Img";
 import { useVariables } from "@/app/context/VariablesContext";
 import { getTranslations } from "@/app/helpers/helpers";
 import { directionMap } from "@/app/constants/constants";
+import LocalLink from "../../_global/LocalLink";
 
 export default function ValueSection() {
   const { local } = useVariables();
-  const { companyValuesSection } = getTranslations(local);
+  const { companyValuesSection, aboutSection } = getTranslations(local);
   return (
     <section dir={directionMap[local]}>
       <div className="c-container py-6">
@@ -23,9 +23,9 @@ export default function ValueSection() {
                 {companyValuesSection.description}
               </p>
 
-              <Link href="/about" className="primary-btn group">
-                Know More
-              </Link>
+              <LocalLink href="/about" className="primary-btn group">
+                {aboutSection.buttonText}
+              </LocalLink>
             </div>
           </div>
 

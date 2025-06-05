@@ -158,6 +158,7 @@ export const directionMap = {
 
 export const servicesSection = [
   {
+    id: 1,
     title: {
       en: "Marketing Strategies",
       ar: "استراتيجيات التسويق",
@@ -169,6 +170,7 @@ export const servicesSection = [
     src: "/servicessection/1.png",
   },
   {
+    id: 2,
     title: {
       en: "Digital Marketing",
       ar: "التسويق الرقمي",
@@ -180,6 +182,7 @@ export const servicesSection = [
     src: "/servicessection/2.png",
   },
   {
+    id: 3,
     title: {
       en: "Brand Identity Design",
       ar: "تصميم هوية العلامة التجارية",
@@ -191,6 +194,7 @@ export const servicesSection = [
     src: "/servicessection/3.png",
   },
   {
+    id: 4,
     title: {
       en: "Search Engine Optimization (SEO)",
       ar: "تحسين محركات البحث (SEO)",
@@ -202,6 +206,7 @@ export const servicesSection = [
     src: "/servicessection/4.png",
   },
   {
+    id: 5,
     title: {
       en: "Influencer Marketing",
       ar: "التسويق عبر المؤثرين",
@@ -213,6 +218,7 @@ export const servicesSection = [
     src: "/servicessection/5.png",
   },
   {
+    id: 6,
     title: {
       en: "Technical Services",
       ar: "الخدمات التقنية",

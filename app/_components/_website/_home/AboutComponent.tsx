@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import Img from "../../_global/Img";
 import { useVariables } from "@/app/context/VariablesContext";
 import { getTranslations } from "@/app/helpers/helpers";
 import { directionMap } from "@/app/constants/constants";
+import LocalLink from "../../_global/LocalLink";
 
 export default function AboutComponent() {
   const { local } = useVariables();
@@ -30,9 +30,9 @@ export default function AboutComponent() {
                 {aboutSection.description}
               </p>
 
-              <Link href="/about" className="primary-btn group">
+              <LocalLink href="/about" className="primary-btn group">
                 {aboutSection.buttonText}
-              </Link>
+              </LocalLink>
             </div>
           </div>
         </div>

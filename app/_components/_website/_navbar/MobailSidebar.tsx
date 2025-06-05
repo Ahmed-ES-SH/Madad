@@ -1,10 +1,10 @@
 "use client";
 import { navLinks } from "@/app/constants/constants";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { useVariables } from "@/app/context/VariablesContext";
 import { IoClose } from "react-icons/io5";
+import LocalLink from "../../_global/LocalLink";
 
 export default function MobailSidebar() {
   const { width, local } = useVariables();
@@ -43,19 +43,23 @@ export default function MobailSidebar() {
 
         <nav className="flex flex-col gap-4 text-primary-dark">
           {navLinks.map((item, index) => (
-            <Link
+            <div
               key={index}
-              href={item.link || "/#contactus"}
               onClick={() => setIsSidebarOpen(false)}
-              className="flex items-center gap-3 text-lg hover:text-primary-blue hover:border-b-primary-blue transition-colors duration-200 not-last:border-b border-b-gray-400 pb-2"
+              className="not-last:border-b hover:text-primary-blue border-b-gray-400 pb-2 hover:border-b-primary-blue transition-colors duration-200"
             >
-              {item.icon && (
-                <span className="text-xl">
-                  <item.icon />
-                </span>
-              )}
-              <span>{item.text[local]}</span>
-            </Link>
+              <LocalLink
+                href={item.link || "/#contactus"}
+                className="flex items-center gap-3 text-lg   "
+              >
+                {item.icon && (
+                  <span className="text-xl">
+                    <item.icon />
+                  </span>
+                )}
+                <span>{item.text[local]}</span>
+              </LocalLink>
+            </div>
           ))}
         </nav>
       </aside>

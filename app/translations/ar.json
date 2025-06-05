@@ -118,5 +118,74 @@
   "servicesSlider": {
     "title": "اكتشف خدماتنا",
     "description": "نقدّم مجموعة متنوعة من الخدمات لمساعدتك على تحقيق أهدافك بكفاءة واحترافية، بدءًا من استراتيجيات التسويق وحتى تصميم المواقع."
+  },
+
+  "contactPage": {
+    "faqTitle": "الأسئلة الشائعة",
+    "faqDescription": "اعثر على إجابات للأسئلة الشائعة حول خدماتنا، وعملنا، وأسعارنا. لم تجد ما تبحث عنه؟ لا تتردد في التواصل معنا مباشرة.",
+    "contactTitle": "تواصل معنا",
+    "contactDescription": "هل أنت مستعد لبدء مشروعك القادم؟ يسعدنا أن نستمع إليك. أرسل لنا رسالة وسنرد عليك في أقرب وقت ممكن.",
+    "contactHelperText": "نحن هنا لمساعدتك والإجابة على أي أسئلة قد تكون لديك.",
+    "sending": "جاري الإرسال...",
+    "sendMessage": "أرسل الرسالة",
+    "messageSend": "أرسلت الرسالة!",
+    "thanksMessage": "شكرًا لتواصلك معنا. سنرد عليك خلال 24 ساعة.",
+    "formTitle": "أرسل لنا رسالة",
+    "formDescription": "املأ النموذج أدناه وسنعود إليك في أقرب وقت ممكن.",
+    "nameLabel": "الاسم الكامل",
+    "namePlaceholder": "أدخل اسمك الكامل",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "subjectLabel": "الموضوع",
+    "subjectPlaceholder": "ما موضوع رسالتك؟",
+    "messageLabel": "الرسالة",
+    "messagePlaceholder": "أخبرنا المزيد عن مشروعك أو استفسارك..."
+  },
+
+  "validationMessages": {
+    "nameRequired": "الاسم مطلوب",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "emailInvalid": "الرجاء إدخال بريد إلكتروني صحيح",
+    "subjectRequired": "الموضوع مطلوب",
+    "messageRequired": "الرسالة مطلوبة",
+    "messageTooShort": "يجب أن تكون الرسالة على الأقل 10 أحرف"
+  },
+
+  "blogPage": {
+    "categoriesTitle": "جميع التصنيفات",
+    "latestPostsTitle": "أحدث المقالات",
+    "popularTagsTitle": "العلامات الشائعة",
+    "showing": "عرض",
+    "Results": "نتيجة",
+    "sortBy": {
+      "recent": "الفرز حسب: الأحدث",
+      "popular": "الفرز حسب: الأكثر شعبية",
+      "oldest": "الفرز حسب: الأقدم"
+    },
+    "ideasThatInspire": "أفكار تلهمك",
+    "loadingText": "تحميل المقالات..."
+  },
+
+  "noArticles": {
+    "title": "لم يتم العثور على مقالات",
+    "message": "عذرًا، لم نتمكن من العثور على أي مقالات مطابقة لمعاييرك. يرجى تعديل الفلاتر أو المحاولة لاحقًا."
+  },
+
+  "ProjectPage": {
+    "technologiesUsed": "التقنيات المستخدمة",
+    "viewProject": "عرض المشروع",
+    "sourceCode": "الكود المصدري",
+    "allProjects": "جميع المشاريع",
+    "exploreProjects": "استكشف مجموعة متنوعة من المشاريع التي تم تطويرها بأحدث التقنيات",
+    "otherProjects": "مشاريع أخرى"
+  },
+
+  "servicePage": {
+    "benefits": "الفوائد",
+    "features": "الميزات",
+    "targetAudience": "الجمهور المستهدف",
+    "otherServices": "خدمات أخرى",
+    "orderService": "طلب الخدمة",
+    "contactbtn": "تواصل معنا"
   }
 }

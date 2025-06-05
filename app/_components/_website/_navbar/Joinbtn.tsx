@@ -1,8 +1,8 @@
 "use client";
 import { useVariables } from "@/app/context/VariablesContext";
 import { getTranslations } from "@/app/helpers/helpers";
-import Link from "next/link";
 import React from "react";
+import LocalLink from "../../_global/LocalLink";
 
 export default function Joinbtn() {
   const { local } = useVariables();
@@ -10,7 +10,7 @@ export default function Joinbtn() {
   return (
     <>
       <div className="max-md:hidden">
-        <Link
+        <LocalLink
           href={"/signup"}
           className="px-4 block shadow-md group overflow-hidden h-full relative py-2 rounded-full bg-primary-blue"
         >
@@ -19,7 +19,7 @@ export default function Joinbtn() {
           </p>
           <div className="group-hover:w-full left absolute right-0 top-0 bg-white w-0 duration-700 h-[500px]"></div>
           <div className="group-hover:w-full right absolute left-0 top-0 bg-white w-0 duration-700 h-[500px]"></div>
-        </Link>
+        </LocalLink>
       </div>
     </>
   );
