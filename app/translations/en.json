@@ -4,6 +4,41 @@
     "description": "Madad offers cutting-edge technology and development services to empower your business in the digital world. From custom software to digital transformation – we've got you covered."
   },
 
+  "aboutMeta": {
+    "title": "About Us - Madad",
+    "description": "Learn more about Madad, a leading provider of innovative tech solutions. Discover our mission, vision, and how we help businesses grow through technology."
+  },
+
+  "servicesMeta": {
+    "title": "Our Services - Madad",
+    "description": "Explore the range of innovative and tailored technology services offered by Madad. From custom software development to full-scale digital transformation – we bring your ideas to life."
+  },
+
+  "portfolioMeta": {
+    "title": "Our Work - Madad",
+    "description": "Discover Madad's portfolio of innovative digital solutions. See how we've helped businesses grow through impactful design, development, and technology."
+  },
+
+  "blogMeta": {
+    "title": "Blog - Madad Insights & Updates",
+    "description": "Read the latest insights, updates, and expert articles from Madad. Stay informed on tech trends, digital innovation, and business growth strategies."
+  },
+
+  "contactMeta": {
+    "title": "Contact Us - Madad",
+    "description": "Get in touch with Madad for inquiries, consultations, or support. We're here to help you bring your digital vision to life."
+  },
+
+  "signInMeta": {
+    "title": "Sign In - Madad",
+    "description": "Access your Madad account to manage your projects, track progress, and stay connected with our team of experts."
+  },
+
+  "signUpMeta": {
+    "title": "Create Account - Madad",
+    "description": "Join Madad today and unlock access to innovative tech solutions. Create your account to get started on your digital journey."
+  },
+
   "hero": {
     "title1": "Excellent IT",
     "solutions": "Solutions",
@@ -188,5 +223,43 @@
     "otherServices": "Other Services",
     "orderService": "Order Service",
     "contactbtn": "Contact Us"
+  },
+
+  "verifyCode": {
+    "verifyEmailTitle": "Verify Email",
+    "verifyEmailDescription": "To complete the account creation process, you must enter the code that was sent to the email address you used to register.",
+    "deactivationWarning": "Are you sure your account will be deactivated?",
+    "okButton": "ok",
+    "cancelButton": "Cancel"
+  },
+
+  "signUpPage": {
+    "createAccount": "Create Account",
+    "alreadyHave": "Already have an account?",
+    "SignIn": " Sign in",
+    "or": "Or",
+    "title": "Create Account",
+    "subtitle": "Join us today and get started"
+  },
+
+  "signInPage": {
+    "title": "Welcome Back",
+    "subtitle": "Log in to continue your journey",
+    "signIn": "Sign In",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create one",
+    "or": "Or"
+  },
+
+  "formValidation": {
+    "fullNameRequired": "Full name is required",
+    "fullNameTooShort": "Full name must be at least 2 characters",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "passwordRequired": "Password is required",
+    "passwordTooShort": "Password must be at least 8 characters",
+    "passwordWeak": "Password must contain uppercase, lowercase, and number",
+    "confirmPasswordRequired": "Please confirm your password",
+    "passwordsNotMatch": "Passwords do not match"
   }
 }

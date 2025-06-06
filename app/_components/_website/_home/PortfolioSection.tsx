@@ -1,16 +1,13 @@
 "use client";
 import { useState } from "react";
 import React from "react";
-import {
-  directionMap,
-  projectCategories,
-  projects,
-} from "@/app/constants/constants";
+import { directionMap, projectCategories } from "@/app/constants/constants";
 import { useVariables } from "@/app/context/VariablesContext";
 import { getTranslations } from "@/app/helpers/helpers";
-import ProjectCard from "./ProjectCard";
 import { AnimatePresence, motion } from "framer-motion";
 import LocalLink from "../../_global/LocalLink";
+import ProjectCard from "../_portfolio/ProjectCard";
+import { projectsData } from "@/app/constants/projects";
 
 export default function PortfolioSection() {
   const { local } = useVariables();
@@ -19,8 +16,10 @@ export default function PortfolioSection() {
 
   // filter logic
   const filteredProjects = selectedCategory
-    ? projects.filter((project) => project.category[local] === selectedCategory)
-    : projects;
+    ? projectsData.filter(
+        (project) => project.category[local] === selectedCategory
+      )
+    : projectsData;
 
   return (
     <section
@@ -69,11 +68,16 @@ export default function PortfolioSection() {
         {/* Projects with animation */}
         <motion.div
           layout
-          className={`grid xl:grid-cols-3  md:grid-cols-2 grid-cols-1 justify-items-center gap-4 w-full mt-6`}
+          className={`grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center gap-4 w-full mt-6`}
         >
           <AnimatePresence mode="sync">
-            {filteredProjects.map((project) => (
-              <ProjectCard key={project.id} local={local} project={project} />
+            {filteredProjects.slice(0, 8).map((project, index) => (
+              <ProjectCard
+                key={project.id}
+                local={local}
+                project={project}
+                index={index}
+              />
             ))}
           </AnimatePresence>
         </motion.div>

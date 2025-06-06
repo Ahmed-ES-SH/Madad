@@ -19,7 +19,17 @@ export default function ProjectCard({ project, local, index }: props) {
   const [mainurl, setMainurl] = useState("");
 
   useEffect(() => {
-    setMainurl(window.location.href);
+    let currentUrl = window.location.href;
+
+    if (!currentUrl.includes("/portfolio")) {
+      if (currentUrl.endsWith("/")) {
+        currentUrl += "portfolio";
+      } else {
+        currentUrl += "/portfolio";
+      }
+    }
+
+    setMainurl(currentUrl);
   }, []);
 
   const goToProject = () => {

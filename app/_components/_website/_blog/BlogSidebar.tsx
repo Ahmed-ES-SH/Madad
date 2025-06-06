@@ -25,7 +25,7 @@ export default function BlogSidebar() {
 
   return (
     <motion.aside
-      className="space-y-8"
+      className="space-y-8 sticky top-24 right-0"
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.5 }}

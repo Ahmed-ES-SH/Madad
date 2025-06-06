@@ -31,9 +31,20 @@ export default function VariablesProvider({ children }: props) {
   const [showLangDrop, setShowLangDrop] = useState(false);
 
   useEffect(() => {
-    addEventListener("resize", () => {
-      setWidth(innerWidth);
-    });
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    // Set width on initial mount
+    handleResize();
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (

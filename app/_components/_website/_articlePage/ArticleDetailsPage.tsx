@@ -100,7 +100,7 @@ export default function ArticleDetailPage() {
           initial="initial"
           animate="animate"
         >
-          <div className="flex items-start gap-2">
+          <div className="flex items-start gap-2 w-full h-full">
             <div className="flex-1/2">
               <ArticleHeader article={article} />
               <ArticleImage src={article.image} alt={article.title} />
@@ -108,7 +108,7 @@ export default function ArticleDetailPage() {
               <ArticleTags tags={article.tags} />
               <InteractionSection />
             </div>
-            <div className="xl:flex-1 xl:block hidden">
+            <div className="xl:flex-1 xl:block sticky top-20 right-0  h-full hidden">
               <BlogSidebar />
             </div>
           </div>

@@ -1,12 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { getTranslations } from "../helpers/helpers";
 import { getSharedMetadata } from "../helpers/getSharedMetadata";
 
-interface Props {
-  params: { local: "en" | "ar" };
-  children: React.ReactNode;
-}
-
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: any) {
   const local = (await params.local) || "en";
   const translations = getTranslations(local);
 
@@ -19,6 +15,6 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-export default function LocalLayout({ children }: Props) {
+export default function LocalLayout({ children }: any) {
   return <>{children}</>;
 }

@@ -79,7 +79,7 @@ export default function ProjectsPortfolio() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="w-1/2 mx-auto px-6 py-8">
+        <div className="lg:w-1/2 w-full  mx-auto px-6 py-8">
           <div className="flex items-center justify-between w-full">
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-2">

@@ -37,7 +37,7 @@ export default function SelectLanguage() {
       <div className="relative max-md:w-full">
         <button
           onClick={toggleDropdown}
-          className="flex items-center justify-between gap-2 px-4 py-2 text-white bg-primary-blue rounded-md shadow-lg max-lg:w-full"
+          className="flex items-center justify-between gap-2 px-4 py-2 text-white bg-sky-600 rounded-full shadow-lg max-lg:w-full"
         >
           <span className="w-[45px]">{selectedLanguage}</span>
           <IoIosArrowDown />

@@ -45,6 +45,8 @@ export default function SidebarFilter({
     }
   }, [setIsSidebarOpen, width]);
 
+  console.log(width);
+
   return (
     <>
       {!isSidebarOpen && (

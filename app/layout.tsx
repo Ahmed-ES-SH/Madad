@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "./_components/_global/Navbar";
 import Footer from "./_components/_global/Footer";
@@ -21,12 +22,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-interface Props {
-  params: { local: "en" | "ar" };
-  children: React.ReactNode;
-}
-
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: any) {
   const local = params.local || "en";
   const translations = getTranslations(local);
 
@@ -39,8 +35,9 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-export default async function RootLayout({ params, children }: Props) {
-  const local = (await params.local) || "en";
+export default async function RootLayout({ params, children }: any) {
+  const local = params.local || "en";
+
   return (
     <html dir={directionMap[local]} lang={local}>
       <body
@@ -49,7 +46,7 @@ export default async function RootLayout({ params, children }: Props) {
         <ClerkProvider>
           <ClientLayout>
             <Navbar />
-            <Toaster richColors position="bottom-right" />
+            <Toaster richColors position="top-center" />
             <div className="min-h-screen">
               {children}
               <WhatsappButton />

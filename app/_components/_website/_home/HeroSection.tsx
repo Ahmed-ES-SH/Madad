@@ -41,14 +41,16 @@ export default function Hero_section() {
         >
           <div className="flex items-center gap-4 mb-6">
             {socialIcons.map((box, index) => (
-              <LocalLink
+              <a
                 key={index}
                 href={box.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group hover:scale-[115%] duration-300 cursor-pointer relative overflow-hidden w-[34px] h-[34px] flex items-center justify-center rounded-md bg-slate-200/80 shadow-sm"
               >
                 <box.icon className="size-6 z-[10] group-hover:text-white duration-300" />
-                <div className="group-hover:w-full left absolute left-0 top-0 bg-primary-orange w-0 duration-300  h-[500px]"></div>
-              </LocalLink>
+                <div className="group-hover:w-full absolute left-0 top-0 bg-primary-orange w-0 duration-300 h-[500px]"></div>
+              </a>
             ))}
           </div>
           <h1 className="text-6xl max-lg:text-4xl font-semibold my-1 text-primary-text">

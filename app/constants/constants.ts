@@ -45,10 +45,10 @@ export const navLinks = [
 ];
 
 export const socialIcons: { icon: IconType; link: string }[] = [
-  { icon: FaFacebook, link: "#" },
-  { icon: FaInstagram, link: "#" },
-  { icon: FaXTwitter, link: "#" },
-  { icon: FaYoutube, link: "#" },
+  { icon: FaFacebook, link: "https://www.facebook.com" },
+  { icon: FaInstagram, link: "https://www.instagram.com" },
+  { icon: FaXTwitter, link: "https://www.x.com" },
+  { icon: FaYoutube, link: "https://www.youtube.com/" },
 ];
 
 export const blogs = [
@@ -151,7 +151,7 @@ export const blogs = [
   },
 ];
 
-export const directionMap = {
+export const directionMap: Record<string, "ltr" | "rtl"> = {
   en: "ltr",
   ar: "rtl",
 };
