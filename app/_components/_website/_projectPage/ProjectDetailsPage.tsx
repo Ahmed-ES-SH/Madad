@@ -228,12 +228,20 @@ export default function ProjectDetailsPage() {
                 }`}
                 variants={itemVariants}
               >
-                <button className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-lg">
+                <a
+                  target="_blank"
+                  href="https://ahmedismail.vercel.app/en"
+                  className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-lg"
+                >
                   {ProjectPage.viewProject}
-                </button>
-                <button className="px-8 py-3 bg-white text-blue-600 font-medium border-2 border-blue-600 rounded-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-md">
+                </a>
+                <a
+                  href="https://github.com/Ahmed-ES-SH"
+                  target="_blank"
+                  className="px-8 py-3 bg-white text-blue-600 font-medium border-2 border-blue-600 rounded-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-md"
+                >
                   {ProjectPage.sourceCode}
-                </button>
+                </a>
               </motion.div>
             </div>
           </motion.div>

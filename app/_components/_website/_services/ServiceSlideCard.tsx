@@ -1,6 +1,9 @@
 import Image from "next/image";
+import LocalLink from "../../_global/LocalLink";
+import { formatTitle } from "@/app/helpers/helpers";
 
 type serviceType = {
+  id: number;
   title: { en: string; ar: string };
   smallDesc: { en: string; ar: string };
   imgsrc: string;
@@ -14,7 +17,6 @@ interface ServiceCardProps {
 export default function ServiceSlideCard({ service, local }: ServiceCardProps) {
   return (
     <div className="relative cursor-pointer w-full h-[450px] overflow-hidden rounded-2xl shadow-md bg-white dark:bg-zinc-900 transition-all duration-300 group">
-      {/* Full image placeholder (replace src later) */}
       <div className="h-[40%] w-full relative">
         <Image
           src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -36,9 +38,14 @@ export default function ServiceSlideCard({ service, local }: ServiceCardProps) {
           />
         </div>
 
-        <h3 className="text-lg font-bold mt-4 text-primary-red  group-hover:underline ">
+        <LocalLink
+          href={`/services/${formatTitle(service.title[local])}?serviceId=${
+            service.id
+          }`}
+          className="text-lg font-bold mt-4 text-primary-red  group-hover:underline "
+        >
           {service.title[local]}
-        </h3>
+        </LocalLink>
 
         <p className="text-sm text-zinc-600 dark:text-zinc-300 mt-2">
           {service.smallDesc[local]}

@@ -63,7 +63,7 @@ export default function Hero_section() {
           <h1 className="text-5xl max-lg:text-3xl font-semibold text-primary-red">
             {hero.success}
           </h1>
-          <p className="my-2 w-[70%]  max-lg:w-full">{hero.description}</p>
+          <p className="my-2 w-full xl:w-[80%]">{hero.description}</p>
           <LocalLink
             href={"/signup"}
             className="px-4 block w-fit h-fit shadow-md group overflow-hidden  relative py-2 rounded-full bg-primary-blue"

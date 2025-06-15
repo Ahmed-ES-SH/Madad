@@ -15,7 +15,7 @@ export default function NavLinks() {
             <LocalLink
               href={link.link ? link.link : "/#contactus"}
               key={index}
-              className="group main_link text-[18px] relative hover:text-sky-200 duration-150 cursor-pointer"
+              className="group main_link xl:text-[18px] text-[15px] relative hover:text-sky-200 duration-150 cursor-pointer"
             >
               <div className="flex items-center gap-1">
                 <link.icon className="size-4" />

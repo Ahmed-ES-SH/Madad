@@ -26,20 +26,20 @@ export default function AboutPage() {
       </section>
 
       <section className="c-container my-4 relative">
-        <div className="xl:w-[90%] mx-auto w-full relative ">
-          <div className="grid grid-cols-1 max-xl:justify-items-center xl:grid-cols-2 gap-9">
-            <div className="img-box">
+        <div className="mx-auto w-full relative ">
+          <div className="flex items-center justify-between max-xl:flex-col max-xl:items-start w-full gap-8 xl:gap-12">
+            <div className="w-[500px] max-md:w-full mx-auto flex-1">
               <Img
                 src="/madad-about.png"
-                className="w-[550px] rounded-md shadow-md border border-gray-300 object-cover"
+                className="w-[550px] max-md:w-full rounded-md  object-cover"
               />
             </div>
-            <div className="xl:pl-[100px] flex items-center">
-              <div className="data w-full">
-                <h2 className="font-bold text-4xl lg:text-5xl text-primary-red underline mb-9 max-xl:text-center relative">
+            <div className="flex items-center">
+              <div className="w-full">
+                <h2 className="font-bold text-4xl lg:text-5xl text-primary-red underline mb-9  relative">
                   {aboutPage.about_us_title}
                 </h2>
-                <p className="max-md:text-[15px] text-lg xl:text-xl xl:leading-8 text-second-text max-w-2xl mx-auto block">
+                <p className="max-md:text-[15px] text-lg xl:text-xl xl:leading-8 text-second-text max-w-3xl block">
                   {aboutPage.about_us_description}
                 </p>
               </div>
@@ -48,22 +48,22 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="c-container my-4 py-8 relative">
-        <div className=" relative ">
-          <div className="flex items-center justify-between max-xl:flex-col-reverse w-full gap-9">
-            <div className="lg:pl-[100px] flex items-center">
-              <div className="data w-full">
-                <h2 className="font-bold text-3xl lg:text-4xl text-primary-red underline mb-9 max-lg:text-center relative">
+        <div className="relative">
+          <div className="flex items-center justify-between max-xl:flex-col-reverse max-xl:items-start w-full gap-8 xl:gap-12">
+            <div className="flex items-center">
+              <div className="w-full">
+                <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-primary-red underline mb-9 whitespace-nowrap  relative">
                   {aboutPage.creative_title}
                 </h2>
-                <p className="max-md:text-[15px] text-lg lg:text-xl lg:leading-8 text-second-text max-w-2xl mx-auto block">
+                <p className="max-md:text-[15px] text-lg lg:text-xl lg:leading-8 text-second-text max-w-2xl">
                   {aboutPage.creative_description}
                 </p>
               </div>
             </div>
-            <div className="img-box xl:w-[550px] w-full shadow-md border border-gray-300 flex-1">
+            <div className="max-xl:mx-auto flex-1">
               <Img
-                src="/portfoliosection/5.jpg"
-                className="w-full h-full rounded-md  object-cover"
+                src="/madad-removebg-preview.png"
+                className="w-[550px] max-md:w-full block ml-auto rounded-md  object-cover"
               />
             </div>
           </div>

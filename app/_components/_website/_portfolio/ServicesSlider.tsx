@@ -2,11 +2,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "swiper/css";
-import { directionMap, services } from "@/app/constants/constants";
+import { directionMap } from "@/app/constants/constants";
 import ServiceSlideCard from "../_services/ServiceSlideCard";
 import { useVariables } from "@/app/context/VariablesContext";
 import { getTranslations } from "@/app/helpers/helpers";
+import { servicesData } from "@/app/constants/servicesData";
+import "swiper/css";
 
 export default function ServicesSlider() {
   const { local } = useVariables();
@@ -37,7 +38,7 @@ export default function ServicesSlider() {
           modules={[Autoplay]}
           spaceBetween={30}
         >
-          {services.map((service, index) => (
+          {servicesData.map((service, index) => (
             <SwiperSlide key={index}>
               <ServiceSlideCard local={local} service={service} />
             </SwiperSlide>
